@@ -4,11 +4,12 @@
 * It is developed using TDD approach.
 
 # Prerequisites
-* This project will require below software to execute
+* This project will require below software to execute.
 1. Apache Maven 3.3.9(This version is not specifically required).
-2. JDK 1.7 or higher.
-3. You need to set MAVEN_HOME and JAVA_HOME variable in your host environment variables where you need to run the program.
-4. Also you need to set PATH variable of your host environment variable.
+2. Create folder structure where this project will be checked out for  e.g C:/var/log
+3. JDK 1.7 or higher.
+4. You need to set MAVEN_HOME and JAVA_HOME variable in your host environment variables where you need to run the program.
+5. Also you need to set PATH variable of your host environment variable.
 
 # Project build instructions
 * Ensure prerequisites are fulfilled as mentioned above.

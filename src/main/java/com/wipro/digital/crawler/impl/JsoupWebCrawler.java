@@ -34,7 +34,7 @@ public class JsoupWebCrawler implements WebCrawler
 			{
 				String href = link.attr("href");
 
-				if (href.contains("wiprodigital.com"))
+				if (href.contains("wiprodigital.com") && !urls.contains(href))
 				{
 					urls.add(href);
 				}

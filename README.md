@@ -1,7 +1,11 @@
 # Getting started
 
-* This project is implementation of simple web crawler for the requirements mentioned in [https://github.com/buildit/org-design/blob/master/Recruitment/Exercises/engineering_lead.md]([https://github.com/buildit/org-design/blob/master/Recruitment/Exercises/engineering_lead.md)
+* This project is implementation of simple web crawler using Jsoup library for the requirements mentioned in [https://github.com/buildit/org-design/blob/master/Recruitment/Exercises/engineering_lead.md]([https://github.com/buildit/org-design/blob/master/Recruitment/Exercises/engineering_lead.md)
 * It is developed using TDD approach.
+
+# Assumptions
+* There are multiple libraries available in java which can used for web crawling most popular seemed Jsoup and crawler4j.
+* Jsoup was chosen due to its simplicty of use and its popularity over crawler4j.Also Jsoup is more active compared to crawler4j.
 
 # Prerequisites
 * This project will require below software to execute.
@@ -26,3 +30,8 @@ log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.`
 * Output of the application will be text file named crawleroutputurllist.txt containing all the urls for http://wiprodigital.com
 * Log file can be found at /var/log/webcrawler.log
+
+# Future enhancements
+* User interface can be provided to user to enter url to be crawled.We can use Spring MVC for this purpose.
+* Configuration can be added for maximum number of pages to crawl,depth of crawling and number of seconds after which we can another request to crawl the same url.
+* Power Mock can be used to mock Jsoup for exception handling scenarios.

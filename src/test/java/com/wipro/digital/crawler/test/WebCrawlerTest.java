@@ -16,6 +16,19 @@ public class WebCrawlerTest
 		WebCrawler webCrawler = new JsoupWebCrawler();
 
 		List<String> urls = webCrawler.processPage("http://wiprodigital.com");
+
 		Assert.assertNotNull(urls);
+
+	}
+
+	@Test
+	public void test_process_page_when_invalid_url_is_passed_then_return_empty_list()
+	{
+		WebCrawler webCrawler = new JsoupWebCrawler();
+
+		List<String> urls = webCrawler.processPage(null);
+
+		Assert.assertEquals(0, urls.size());
+
 	}
 }

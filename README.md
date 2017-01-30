@@ -21,13 +21,17 @@
 * Execute command `mvn clean compile assembly:single` from command line by navigating to project root folder where pom.xml file is present.
 * This command will download all dependencies from Maven Repository and will create a executable jar file named web-crawler-1.0-jar-with-dependencies.jar(fat jar file with all dependencies).
 * Execute `mvn clean install` from command line to ensure all the test cases are passing.
-* To execute the application run below cpmmand
+* To execute the application run below command
+
 `java -cp target/web-crawler-1.0-jar-with-dependencies.jar  com.wipro.digital.application.WebCrawlerApplication`
+
 * You might see some log4j info messages as below
+
 `Nitin-Prabhu:web-crawler nitinprabhu$ java -cp target/web-crawler-1.0-jar-with-dependencies.jar  com.wipro.digital.application.WebCrawlerApplication 
 log4j:WARN No appenders could be found for logger (com.wipro.digital.crawler.impl.JsoupWebCrawler).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.`
+
 * Output of the application will be text file named crawleroutputurllist.txt containing all the urls for http://wiprodigital.com
 * Log file can be found at /var/log/webcrawler.log
 
